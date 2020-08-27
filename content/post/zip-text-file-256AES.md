@@ -17,4 +17,10 @@ To decrypt:
 7za e file.zip
 ```
 
+You need to install as well associated tools. Shown are for Redhat-like Linux:
+```
+sudo yum install p7zip p7zip-plugins
+```
+
+
 Some details https://unix.stackexchange.com/questions/182573/how-strong-is-the-encryption-of-a-zip-file-in-linux-mint and https://www.2daygeek.com/zip-7zip-encrypt-decrypt-password-protect-files-folders-linux/
