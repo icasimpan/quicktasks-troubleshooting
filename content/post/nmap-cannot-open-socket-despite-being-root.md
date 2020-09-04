@@ -20,7 +20,7 @@ Most probably, installation was through Ubuntu's snap as follows:
 nmap 7.80 from Maximiliano Bertacchini (maxiberta) installed
 ```
 
-Solution is tor run below command
+Solution is to run below command
 ```
 # snap connect nmap:network-control
 ```
