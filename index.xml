@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Troubleshooting | IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks-troubleshooting/</link>
+    <description>Recent content in Home on Troubleshooting | IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate>
+    
+	<atom:link href="https://ismael.casimpan.com/quicktasks-troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NMap cannot open a raw socket despite being root</title>
+      <link>https://ismael.casimpan.com/quicktasks-troubleshooting/nmap-cannot-open-socket-despite-being-root/</link>
+      <pubDate>Sat, 05 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks-troubleshooting/nmap-cannot-open-socket-despite-being-root/</guid>
+      <description>If you are seeing this error:
+~# nmap -Pn www.example.org Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-04 20:59 UTC Couldn&#39;t open a raw socket. Error: Permission denied (13)  Most probably, installation was through Ubuntu&amp;rsquo;s snap as follows:
+~# snap install nmap nmap 7.80 from Maximiliano Bertacchini (maxiberta) installed  Solution is to run below command
+# snap connect nmap:network-control  And re-run nmap command earlier.</description>
+    </item>
+    
+    <item>
+      <title>Zip a Text File using 256-AES Encryption</title>
+      <link>https://ismael.casimpan.com/quicktasks-troubleshooting/zip-text-file-256aes/</link>
+      <pubDate>Fri, 28 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks-troubleshooting/zip-text-file-256aes/</guid>
+      <description>Use the following command:
+7z a -p -mem=AES256 -tzip file.zip source-file1.txt source-file2.txt  It will ask for a password but will obviously not be echoed.
+To decrypt:
+7za e file.zip  You need to install as well associated tools. Shown are for Redhat-like Linux:
+sudo yum install p7zip p7zip-plugins  Some details https://unix.stackexchange.com/questions/182573/how-strong-is-the-encryption-of-a-zip-file-in-linux-mint and https://www.2daygeek.com/zip-7zip-encrypt-decrypt-password-protect-files-folders-linux/</description>
+    </item>
+    
+    <item>
+      <title>Detecting USB Devices in Linux</title>
+      <link>https://ismael.casimpan.com/quicktasks-troubleshooting/detecting-usb-device-in-linux/</link>
+      <pubDate>Sat, 22 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks-troubleshooting/detecting-usb-device-in-linux/</guid>
+      <description>I did buy a wifi donggle in Lazada but I didn&amp;rsquo;t know if it can be detected in my Raspberry pi using Rasbian. Command to use: lsusb. Example:
+root@raspberrypi:/home/pi# lsusb Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub Bus 001 Device 003: ID 148f:7601 Ralink Technology, Corp. MT7601U Wireless Adapter Bus 001 Device 004: ID 0000:3825 Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.</description>
+    </item>
+    
+    <item>
+      <title>Reliable Remote Laptop Connections using tmate</title>
+      <link>https://ismael.casimpan.com/quicktasks-troubleshooting/reliable-remote-laptop-connections-using-tmate/</link>
+      <pubDate>Fri, 31 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks-troubleshooting/reliable-remote-laptop-connections-using-tmate/</guid>
+      <description>If you even have a need to connect to a remote laptop, tmate is the solution. Had tried this personally in MacOS Catalina (10.15.5) and it works fine.
+brew install tmate  I encountered this error though after installation:
+$ tmux dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib Referenced from: /usr/local/bin/tmate Reason: image not found Trace/BPT trap: 5  Solution is to uninstall and re-install
+brew uninstall --force tmate brew install tmate  So in summary, one installs tmux and the other simply connects to it via ssh.</description>
+    </item>
+    
+  </channel>
+</rss>

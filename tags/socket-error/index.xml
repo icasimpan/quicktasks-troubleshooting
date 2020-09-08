@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>socket-error on Troubleshooting | IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks-troubleshooting/tags/socket-error/</link>
+    <description>Recent content in socket-error on Troubleshooting | IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2020 00:20:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://ismael.casimpan.com/quicktasks-troubleshooting/tags/socket-error/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NMap cannot open a raw socket despite being root</title>
+      <link>https://ismael.casimpan.com/quicktasks-troubleshooting/nmap-cannot-open-socket-despite-being-root/</link>
+      <pubDate>Sat, 05 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks-troubleshooting/nmap-cannot-open-socket-despite-being-root/</guid>
+      <description>If you are seeing this error:
+~# nmap -Pn www.example.org Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-04 20:59 UTC Couldn&#39;t open a raw socket. Error: Permission denied (13)  Most probably, installation was through Ubuntu&amp;rsquo;s snap as follows:
+~# snap install nmap nmap 7.80 from Maximiliano Bertacchini (maxiberta) installed  Solution is to run below command
+# snap connect nmap:network-control  And re-run nmap command earlier.</description>
+    </item>
+    
+  </channel>
+</rss>
