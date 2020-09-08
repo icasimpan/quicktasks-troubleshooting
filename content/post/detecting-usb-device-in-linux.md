@@ -24,4 +24,4 @@ Bus 001 Device 003: ID 148f:7601 Ralink Technology, Corp. MT7601U Wireless Adapt
 
 The other one that doesn't have a name is a mouse I also bought from Lazada.
 
-If you need to explore further on USB names, there's a [USB ID Repo|http://www.linux-usb.org/usb-ids.html] and I wrote a github repo that detects and compiles changes via Travis https://github.com/icasimpan/usbids.
+If you need to explore further on USB names, there's a [USB ID Repo](http://www.linux-usb.org/usb-ids.html) and I wrote a github repo that detects and compiles changes via TravisCI: https://github.com/icasimpan/usbids.
